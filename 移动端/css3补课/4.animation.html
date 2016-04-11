@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        #box{
+            width: 100%;
+            height: 100%;
+        }
+        #box img{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        #box ul{
+            width: 100%;
+            position: absolute;
+            bottom:10%;
+            text-align: center;
+            z-index: 100;
+
+        }
+        #box ul li{
+            display: inline-block;
+            width: 130px;
+            height:130px;
+        }
+        #box ul li img{
+            width: 110px;
+            height: 110px;
+            border:10px solid rgba(255,255,255,0.6);
+            border-radius: 50%;
+        }
+        :target{
+           z-index: 10;
+        }
+        @keyframes slideLeft {/*声明的关键帧动画*/
+           0%{
+               transform : translate(-500px,0)
+           }
+            100%{
+                transform : translate(0,0)
+            }
+        }
+        #bg1:target{
+            animation:slideLeft 1s ease-in;
+            /*-webkit-animation:slideLeft 1s ease-in; ;*/
+        }
+
+
+        @keyframes slideTop {/*声明的关键帧动画*/
+            0%{
+              top:-600px;
+            }
+            100%{
+               top:0
+            }
+        }
+        #bg2:target{
+            animation:slideTop 1s ease-in;
+            /*-webkit-animation:slideLeft 1s ease-in; ;*/
+        }
+
+        @keyframes zoomIn {/*声明的关键帧动画*/
+            0%{
+                transform: scale(0.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        #bg3:target{
+            animation:zoomIn 1s ease-in;
+            /*-webkit-animation:slideLeft 1s ease-in; ;*/
+        }
+        @keyframes zoomOut {/*声明的关键帧动画*/
+            0%{
+                transform: scale(2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        #bg4:target{
+            animation:zoomOut 1s ease-in;
+            /*-webkit-animation:slideLeft 1s ease-in; ;*/
+        }
+        @keyframes rotate {/*声明的关键帧动画*/
+            0%{
+                transform: scale(0.2) rotate(0deg);
+            }
+            100%{
+                transform: scale(1) rotate(360deg) ;
+            }
+        }
+        #bg5:target{
+            animation:rotate 1s ease-in;
+            /*-webkit-animation:slideLeft 1s ease-in; ;*/
+        }
+        /*@-webkit-keyframes sileLeft {*/
+
+        /*}*/
+
+
+/*E:target  通过url获得相对应的E目标元素*/
+    </style>
+</head>
+<body>
+<!--
+div#box>img[src="images/.jpg"]*5+(ul>li*5>a>img[src ="images/.jpg"])
+-->
+
+<div id="box">
+    <img src="images/1.jpg" alt="" id="bg1"/>
+    <img src="images/2.jpg" alt="" id="bg2"/>
+    <img src="images/3.jpg" alt="" id="bg3"/>
+    <img src="images/4.jpg" alt="" id="bg4"/>
+    <img src="images/5.jpg" alt="" id="bg5"/>
+    <ul>
+    <li><a href="#bg1"><img src="images/1.jpg"/></a></li>
+    <li><a href="#bg2"><img  src="images/2.jpg"/></a></li>
+    <li><a href="#bg3"><img  src="images/3.jpg"/></a></li>
+    <li><a href="#bg4"><img  src="images/4.jpg"/></a></li>
+    <li><a href="#bg5"><img  src="images/5.jpg"/></a></li>
+</ul>
+</div>
+</body>
+</html>

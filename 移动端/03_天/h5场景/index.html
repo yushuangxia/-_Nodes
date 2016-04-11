@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="main">
+    <div id="sound">
+        <audio src="images/bell.mp3" id="bell" loop preload="auto"></audio>
+        <audio src="images/say.mp3" id="say" loop preload="auto"></audio>
+        <audio src="images/music.mp3" id="music" loop preload="auto"></audio>
+    </div>
+    <div id="loading">
+        <div class="loadBox">
+            <span class="progress"></span>
+        </div>
+    </div>
+    <div id="phone">
+        <div class="phoneName"></div>
+        <div class="answer">
+            <div class="listen"></div>
+            <div class="listenTouch"></div>
+        </div>
+        <div class="speaker">
+            <div class="hangUp">
+
+            </div>
+        </div>
+    </div>
+    <div id="message">
+        <ul>
+            <li class="left"><img src="images/messageHead1.png" alt=""/>
+                <img src="images/messageArrow1.png" alt="" class="arrow"/>
+                hello,小乐乐你好
+            </li>
+            <li class="right"><img src="images/messageHead2.png" alt=""/>
+                <img src="images/messageArrow2.png" alt="" class="arrow"/>
+                请问有什么可以帮到你的？
+            </li><li class="left"><img src="images/messageHead1.png" alt=""/>
+            <img src="images/messageArrow1.png" alt="" class="arrow"/>
+            你们那个移动端课程都讲到什么？
+        </li>
+            <li class="right"><img src="images/messageHead2.png" alt=""/>
+                <img src="images/messageArrow2.png" alt="" class="arrow"/>
+                我们这次的移动端课程，讲的是移动端H5场景应用的相关知识，比如：CSS3D、canvas、动画……
+            </li><li class="left"><img src="images/messageHead1.png" alt=""/>
+            <img src="images/messageArrow1.png" alt="" class="arrow"/>
+            那你们上课的时间是什么？
+        </li>
+            <li class="right"><img src="images/messageHead2.png" alt=""/>
+                <img src="images/messageArrow2.png" alt="" class="arrow"/>
+                你们这个课程是谁来讲？？
+            </li>
+            <li class="left">
+                <img src="images/messageHead1.png">
+                <img src="images/messageArrow1.png" class="arrow"/>
+                呃……是的，我一直都在，我正在拼命打字回复你的问题，只是回复慢了，请见谅啊。另外，你的问题比较多，我干脆送给你一个神奇魔方，让这个精致的小魔方来回复你所有问题吧？
+            </li>
+        </ul>
+        <div class="messageText"></div>
+    </div>
+    <div id="cube">
+        <ul id="cubeBox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+<script src="my.js"></script>
+</html>

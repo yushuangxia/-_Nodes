@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+    .box{
+        background: #2192bc;
+        height: 300px;
+        line-height: 300px;
+        text-align: center;
+    }
+    .box span{
+        width: 100px;
+        height: 100px;
+        display:inline-block;
+        background:#2c9dc4 url(images/img1.png) no-repeat center;
+        border-radius:50%;
+        box-shadow:0 0 0 20px transparent;
+        transition: box-shadow 1s ease-in-out;/*标准浏览器*/
+        -webkit-transition:box-shadow 1s ease-in-out;/*webkit内核*/
+        -moz-transition:box-shadow 1s ease-in-out ;/*火狐浏览器*/
+        -o-transition:box-shadow 1s ease-in-out ;/*欧朋浏览器*/
+        -ms-transition:box-shadow 1s ease-in-out;/*ie浏览器*/
+    }/*写在这边相当于执行了两次动画效果*/
+    .box span:hover{
+        box-shadow: 0 0 0 20px rgba(255,255,255,0.3);
+
+
+    }
+    </style>
+
+</head>
+<body>
+<div class="box"><span></span></div>
+<script>
+    //transition 动画设置开头的状态和结尾的状态
+    //可以通过transition属性设置css属性值在一定时间内,有一个css属性值过渡到另一个css属性值
+
+</script>
+</body>
+</html>

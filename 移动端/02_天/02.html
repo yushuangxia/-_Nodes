@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{ margin: 0;padding: 0;}
+        .box{
+            width: 200px;height: 200px; background: red;
+        }
+        .box:hover{
+            width: 500px;
+            opacity: 0.1;
+            transform: scale(2);
+            /*扩大为两倍*/
+            -webkit-transform: scale(2);
+            transform: translate(100px,100px);
+            /*偏移量*/
+            -webkit-transform: translate(100px,100px);
+            /*transform:rotate(45deg);*/
+            /*变形的属性 不是动画*/
+            /*-webkit-transform:rotate(45deg);*/
+            /*两个都要写 兼容安卓手机*/
+           /* transition:width  1s linear,opcity 1s linear;
+            *//*动画就是1秒内完成动画*//*
+            -weblit-transition:width 1s linear,opcity 1s linear;*/
+            transition: 1s;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

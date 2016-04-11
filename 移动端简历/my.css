@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Microsoft Yahei',Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#main {
+    width: 640px;
+    height: 960px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -320px;
+    -webkit-transform-origin: top;
+    overflow: hidden;
+}
+
+.a1Img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.a1Img img {
+    width: 100%;
+    height: auto
+}
+
+.a2Img {
+    width: 100%;
+    height: 100%;
+}
+
+.a2Img img {
+    position: absolute;
+    width: 7%;
+
+    left: 39%;
+    top: 36%;
+    z-index: 2;
+    animation: shake 2s ease-out infinite;
+}
+
+.a3Img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.a3Img img {
+    position: absolute;
+    top: 68%;
+    left: 35%;
+    animation: zoomIn 2s ease-out forwards;
+}
+
+#list {
+    height: 100%
+}
+
+#list li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#list li.zIndex {
+    z-index: 5;
+}
+
+#list li:nth-child(1) {
+    background: -webkit-radial-gradient(at bottom, #ffffff, #fdd2dc);
+    background: radial-gradient(at bottom, #fff, #fdd2dc);
+}
+
+#list li:nth-child(2) {
+    background: -webkit-radial-gradient(at bottom,  #ffffff, #fdd2dc);
+    background: radial-gradient(at bottom,  #ffffff, #fdd2dc);
+}
+
+#list li:nth-child(3) {
+    background: -webkit-radial-gradient(at bottom,  #ffffff, #fdd2dc);
+    background: radial-gradient(at bottom,  #ffffff, #fdd2dc);
+}
+
+#list li:nth-child(4) {
+    background: -webkit-radial-gradient(at bottom,  #ffffff, #fdd2dc);
+    background: radial-gradient(at bottom,  #ffffff, #fdd2dc);
+    background: url("img/a4.png") no-repeat;background-size: cover;
+}
+
+.a1 {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.a1 div:nth-child(odd) {
+    -webkit-transform: translate(500px, 0);
+    transform: translate(500px, 0);
+}
+
+.a1 div:nth-child(even) {
+    -webkit-transform: translate(-500px, 0);
+    transform: translate(-500px, 0);
+}
+.a4 ul li{ display: block;}
+.a4 div{ display: inline-block;width:80%;height:30px;}
+.a4 div li{ animation: zoomIn 2s ease-out forwards; }
+#a1 div {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+}
+
+
+
+.a2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 30%;
+    animation: bounceInUp 2s ease-out forwards;
+}
+
+.a2 img {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.a2Text {
+    width: 50%;
+    margin: 50px auto 0;
+    font-size: 28px;
+    position: relative;
+    bottom: -10%;
+    animation: bounceInLeft 2s ease-out forwards;
+}
+
+.a2Text p {
+    line-height: 40px;
+}
+
+.a3 { padding-top: 10%;
+    width: 100%;
+    height: auto;
+}
+
+.a3 h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.a3 .a3Info {
+    margin: 90px auto;
+    width:70%;
+
+   background: #997f85;
+
+padding: 10px;
+    font-size: 26px;
+}
+
+.a3 .a3Info p {
+    height: 60px;
+    line-height: 60px;margin: 10px;
+    background: #ad989d; padding-left: 30px;color: #fff;
+}
+
+#a2 p {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+
+}
+
+#a2 p:nth-child(1) {
+    left: 50%;
+    top: 30%
+}
+
+#a2 p:nth-child(2) {
+    left: 20%;
+    top: 40%
+}
+
+#a2 p:nth-child(3) {
+    left: 80%;
+    top: 40%
+}
+
+#a2 p:nth-child(4) {
+    left: 20%;
+    top: 60%
+}
+
+#a2 p:nth-child(5) {
+    left: 80%;
+    top: 60%
+}
+
+#a2 p:nth-child(6) {
+    left: 50%;
+    top: 70%
+}
+
+
+
+#a3 {
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.a4{background: url("img/a4.png") no-repeat;background-size: cover;}
+.a4 p {
+    width: 0;
+    height: 0;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px 0 #fff;
+    word-wrap: break-word;
+    overflow: hidden;
+    color: #fff;
+    position: absolute;
+}
+
+.a4 p:nth-child(1) {
+    left: 10%;
+    top: 15%;
+}
+
+.a4 p:nth-child(2) {
+    left: 53%;
+    top: 18%;
+}
+
+.a4 p:nth-child(3) {
+    left: 46%;
+    top: 78%;
+}
+
+#a4 p:nth-child(1) {
+    width: 200px;
+    height: 100px;
+}
+
+#a4 p:nth-child(2) {
+    width: 200px;
+    height: 100px;
+}
+
+#a4 p:nth-child(3) {
+    width: 100px;
+    height: 100px;
+}
+
+#a4 p {
+    -webkit-transition: 1s;
+    transition: 1s;
+
+}
+.a3Info p{ animation: bounceInUp 2s ease-out forwards; }

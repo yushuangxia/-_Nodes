@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .box{
+            width:367px;
+            height: 297px;
+            position: relative;
+            background: url(images/bg-grid.jpg) no-repeat;
+        }
+        .box img:nth-child(1){/*1.找子元素2.找第一个子元素是img的这个标签,如果不是img就找不到*/
+            opacity: 0.5;
+        }
+        /*.box img:nth-of-type(1){/!*1.找子元素中标记名是img的标签2.找img标签中的第一个*!/*/
+            /**/
+        /*}*/
+        .box img{
+            width: 142px;
+            height: 200px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            margin:-100px 0 0 -71px;
+        }
+        .box img:nth-child(2){
+            /*也得写兼容写法*/
+            /*transform: rotate(-45deg);*/
+            /*transform: scale(0.5,2);*/
+            /*transform: skew(0deg,30deg);*/
+            transform: translate(100px);
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <img src="images/pic.jpg" alt=""/>
+    <img src="images/pic.jpg" alt=""/>
+</div>
+<script>
+</script>
+</body>
+</html>

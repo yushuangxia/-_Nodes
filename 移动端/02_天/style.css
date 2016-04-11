@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+
+}
+
+.headerLayout {
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+    line-height: 80px;
+    background: #fff;
+    position: fixed;
+    box-shadow: 0 0 3px 3px rgba(34, 67, 88, 0.3)
+}
+
+.header {
+    width: 1000px;
+}
+
+.header a {
+    float: left;
+}
+
+.header ul {
+    float: right;
+}
+
+.header ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.header ul li img {
+    width: 100%;
+}
+
+.slide {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.slide ul {
+    text-align: center;
+}
+
+.slide ul li {
+    display: inline-block;
+    margin: 0 1%;
+}
+
+.slide {
+    padding-top: 100px;
+}
+
+.service {padding-top: 30px;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service ul li {
+    display: inline-block;
+    width: 263px;
+}
+.service ul li h5{
+    line-height: 40px; font-size: 18px;
+}
+.service ul li p{
+    line-height: 28px; font-size: 14px;text-align: left;
+}
+@media all and (min-width: 1000px) {
+    .header {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+}
+
+@media all and (max-width: 999px) {
+    .header {
+
+    }
+
+}
